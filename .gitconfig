@@ -1,0 +1,8 @@
+[http]
+	postBuffer = 524288000
+[core]
+	compression = 0
+	editor = \"C:\\Users\\Nick\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\code\" --wait
+[gui]
+	recentrepo = E:/Coding data and packages
+	recentrepo = E:/Stopwatch project

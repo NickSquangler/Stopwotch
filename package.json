@@ -1,0 +1,14 @@
+{
+  "name": "nick",
+  "version": "1.0.0",
+  "description": "Stopwatch project",
+  "main": "main.js",
+  "scripts": {
+    "test": "cypress run"
+  },
+  "author": "Nick",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^9.5.3"
+  }
+}
