@@ -2,7 +2,7 @@ name: Cypress tests for stopwatch
 on: 
  [workflow_dispatch]
 jobs:
-  cypress-run:
+  cypress-run: 
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -10,11 +10,10 @@ jobs:
 
       # first, install dependencies and Cypress
       # from the root folder using the lock file
-      - name: Cypress install
+      - name: Cypress install, run tests and record
         uses: cypress-io/github-action@v2.9.7
         with:
-         start: npm start
+         runTests: true
          record: true
         env:
-          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
-          runTests: true
+          CYPRESS_RECORD_KEY: true
