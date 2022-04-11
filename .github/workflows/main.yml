@@ -14,8 +14,3 @@ jobs:
         with:
          start: npm start
          runTests: true
-         
-      - name: Record tests
-        with:
-          record: true
-          env: CYPRESS_RECORD_KEY:{8ef3a184-0c12-4f21-9925-2841a226310a}
