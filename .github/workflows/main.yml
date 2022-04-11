@@ -12,6 +12,6 @@ jobs:
       - name: Cypress install
         uses: cypress-io/github-action@v2.9.7
         with:
-         run: 
+         start: 
           cypress run --record
          runTests: true
