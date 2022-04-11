@@ -14,6 +14,6 @@ jobs:
         with:
          start: 
           npm start & wait-on http://localhost:8080
-         run:
+         record:
           cypress run --record --key 8ef3a184-0c12-4f21-9925-2841a226310a
          runTests: true
