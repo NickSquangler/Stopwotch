@@ -16,4 +16,4 @@ jobs:
          runTests: true
          record: true
         env:
-          CYPRESS_RECORD_KEY: --record 8ef3a184-0c12-4f21-9925-2841a226310a
+          CYPRESS_RECORD_KEY: 8ef3a184-0c12-4f21-9925-2841a226310a
