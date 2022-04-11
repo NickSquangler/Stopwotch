@@ -14,7 +14,7 @@ jobs:
         uses: cypress-io/github-action@v2.9.7
         with:
          start: npm start
-         record: true 
+         record: true
         env:
-          CYPRESS_RECORD_KEY: ${{8ef3a184-0c12-4f21-9925-2841a226310a}}
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           runTests: true
