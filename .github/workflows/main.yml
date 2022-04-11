@@ -1,0 +1,16 @@
+name: Cypress tests for stopwatch
+on: [push]
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      # first, install dependencies and Cypress
+      # from the root folder using the lock file
+      - name: Cypress install
+        uses: cypress-io/github-action@v2.9.7
+        with:
+         start: npm start
+         runTests: true
