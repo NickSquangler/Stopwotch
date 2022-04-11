@@ -11,5 +11,7 @@ jobs:
       # from the root folder using the lock file
       - name: Cypress install
         uses: cypress-io/github-action@v2.9.7
-        with:         
+        with:
+         run: 
+          cypress run --record
          runTests: true
