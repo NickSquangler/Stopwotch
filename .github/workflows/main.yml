@@ -10,17 +10,10 @@ jobs:
       # first, install dependencies and Cypress
       # from the root folder using the lock file
       - name: Cypress install
-        uses: cypress-io/github-action@v2
+        uses: cypress-io/github-action@v2.9.7
         with:
-          build: npm run build
-          start: npm start
-       
-       
-       # uses: cypress-io/github-action@v2.9.7
-        #with:
-         #start: 
-          
-          
-          #npm start & wait-on http://localhost:8080
-          #cypress run --record --key 8ef3a184-0c12-4f21-9925-2841a226310a
-         #runTests: true
+         start: 
+          npm start & wait-on http://localhost:8080
+         run:
+          cypress run --record --key 8ef3a184-0c12-4f21-9925-2841a226310a
+         runTests: true
