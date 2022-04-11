@@ -4,6 +4,7 @@
   "description": "Stopwatch project",
   "main": "main.js",
   "scripts": {
+    "npm" "run-script"
     "test": "cypress run" 
   },
   "author": "Nick",
