@@ -13,3 +13,4 @@ jobs:
         uses: cypress-io/github-action@v2.9.7
         with:
           runTests: true
+npx browserslist@latest --update-db
