@@ -10,6 +10,7 @@ describe('functionality of the start button', () => {
         cy.visit('stopwatch.html')
         let startTime = cy.get('#stopwatch')
         cy.get('#buttons > li > #start').click()
+        cy.wait(2000)
         let currentTime = cy.get('#stopwatch')
         expect(startTime).not.to.equal(currentTime)
     })
